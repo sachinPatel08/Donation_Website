@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title> Global Foundation </title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="navbar  animate__animated animate__fadeInDown animate__delay-2s">
+            <h1 id="navbar-logo" onclick="location.href = './index.html';">GLOBAL FOUNDATION</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="./index.html" class="nav-links">HOME</a>
+                </li>
+                <li>
+                    <a href="./donate.html" class="nav-links">DONATE</a>
+                </li>
+                <li>
+                    <a href="./ourworks.html" class="nav-links">OUR WORKS</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav-links">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="home-page">
+        <div class="container">
+            <img src="./img/Home-Image-1.jpg" alt="Home-Image">
+            <div class="centered animate__animated animate__zoomIn animate__delay-2s">
+                <p class="animate__animated animate__zoomIn animate__delay-3s">" The value of life is not in its
+                    duration, but in its
+                    donation. You are not important because of how
+                    long you live, you are important because of how effective you live. "
+                </p>
+                <button class="glow-on-hover animate__animated animate__zoomIn animate__delay-3s" type="button"
+                    onclick="location.href = './donate.html';">DONATE</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <nav class="footer">
+            <h1 id="footer-logo" onclick="location.href = './index.html';">GLOBAL FOUNDATION</h1>
+            <p>© Copyright. All Rights Reserved | Design by Dhrutik, Sachin and Sruhil</p>
+            <div class="social-icon">
+                <a href="https://github.com/sheetdev08" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/sachin-patel-a3a814220" class="fa fa-linkedin"></a>
+                <a href="https://www.facebook.com/patel.sheet" class="fa fa-facebook"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
